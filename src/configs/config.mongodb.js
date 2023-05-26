@@ -18,7 +18,7 @@ const production = {
     db: {
         host: process.env.PRO_DB_HOST || "mongodb+srv",
         port: process.env.PRO_DB_PORT,
-        name: process.env.PRO_DB_NAME
+        name: process.env.PRO_DB_NAME || "nikkishop:Duythanh1997.@cluster0.gmgqo.mongodb.net"
     }
 }
 const config = {dev, production};
