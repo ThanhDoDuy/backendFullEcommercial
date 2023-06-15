@@ -19,9 +19,13 @@ var keySchema = new Schema({
         required:true,
     },
     // dectect the expired used publickey which Hacker use this token => punish
-    refreshToken:{
+    refreshTokensUsed:{
         type:Array,
         default:[],
+    },
+    refreshToken: {
+        type: String,
+        required: true
     }
 },{
     timestamps: true,
